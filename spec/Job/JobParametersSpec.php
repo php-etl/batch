@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\UndefinedJobParameterException;
+use Kiboko\Component\ETL\Batch\Job\UndefinedJobParameterException;
 use PhpSpec\ObjectBehavior;
 
 class JobParametersSpec extends ObjectBehavior

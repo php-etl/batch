@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\BatchStatus;
+use Kiboko\Component\ETL\Batch\Job\BatchStatus;
 use PhpSpec\ObjectBehavior;
 
 class JobInterruptedExceptionSpec extends ObjectBehavior
@@ -25,7 +25,7 @@ class JobInterruptedExceptionSpec extends ObjectBehavior
             0,
             null
         );
-        $this->getStatus()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Job\BatchStatus');
+        $this->getStatus()->shouldBeAnInstanceOf(BatchStatus::class);
         $this->getStatus()->getValue()->shouldReturn(BatchStatus::STOPPED);
     }
 }

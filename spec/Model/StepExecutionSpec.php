@@ -1,29 +1,35 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Model;
+namespace spec\Kiboko\Component\ETL\Batch\Model;
 
-use Akeneo\Component\Batch\Item\InvalidItemInterface;
-use Akeneo\Component\Batch\Job\BatchStatus;
-use Akeneo\Component\Batch\Job\ExitStatus;
-use Akeneo\Component\Batch\Model\JobExecution;
+use Kiboko\Component\ETL\Batch\Item\ExecutionContext;
+use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
+use Kiboko\Component\ETL\Batch\Job\BatchStatus;
+use Kiboko\Component\ETL\Batch\Job\ExitStatus;
+use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
+use Kiboko\Component\ETL\Batch\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
 class StepExecutionSpec extends ObjectBehavior
 {
-    function let(JobExecution $jobExecution)
+    function let(JobExecutionInterface $jobExecution)
     {
         $this->beConstructedWith('myStepName', $jobExecution);
+
+        $jobExecution
+            ->addStepExecution($this->getWrappedObject())
+            ->willReturn($jobExecution);
     }
 
     function it_is_properly_instanciated()
     {
-        $this->getStatus()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Job\BatchStatus');
+        $this->getStatus()->shouldBeAnInstanceOf(BatchStatus::class);
         $this->getStatus()->getValue()->shouldReturn(BatchStatus::STARTING);
-        $this->getExitStatus()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Job\ExitStatus');
+        $this->getExitStatus()->shouldBeAnInstanceOf(ExitStatus::class);
         $this->getExitStatus()->getExitCode()->shouldReturn(ExitStatus::EXECUTING);
-        $this->getExecutionContext()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Item\ExecutionContext');
-        $this->getWarnings()->shouldBeAnInstanceOf('Doctrine\Common\Collections\ArrayCollection');
+        $this->getExecutionContext()->shouldBeAnInstanceOf(ExecutionContext::class);
+        $this->getWarnings()->shouldHaveType('iterable');
         $this->getWarnings()->shouldBeEmpty();
         $this->getStartTime()->shouldBeAnInstanceOf('\Datetime');
         $this->getFailureExceptions()->shouldHaveCount(0);
@@ -32,16 +38,16 @@ class StepExecutionSpec extends ObjectBehavior
     function it_is_cloneable()
     {
         $clone = clone $this;
-        $clone->shouldBeAnInstanceOf('Akeneo\Component\Batch\Model\StepExecution');
+        $clone->shouldBeAnInstanceOf(StepExecution::class);
         $clone->getId()->shouldReturn(null);
     }
 
     function it_upgrades_status()
     {
-        $this->getStatus()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Job\BatchStatus');
+        $this->getStatus()->shouldBeAnInstanceOf(BatchStatus::class);
         $this->getStatus()->getValue()->shouldReturn(BatchStatus::STARTING);
-        $this->upgradeStatus(BatchStatus::COMPLETED)->shouldBeAnInstanceOf('Akeneo\Component\Batch\Model\StepExecution');
-        $this->getStatus()->shouldBeAnInstanceOf('Akeneo\Component\Batch\Job\BatchStatus');
+        $this->upgradeStatus(BatchStatus::COMPLETED)->shouldBeAnInstanceOf(StepExecution::class);
+        $this->getStatus()->shouldBeAnInstanceOf(BatchStatus::class);
         $this->getStatus()->getValue()->shouldReturn(BatchStatus::COMPLETED);
     }
 

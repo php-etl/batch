@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
 use PhpSpec\ObjectBehavior;
 

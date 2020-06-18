@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\ExitStatus;
+use Kiboko\Component\ETL\Batch\Job\ExitStatus;
 use PhpSpec\ObjectBehavior;
 
 class ExitStatusSpec extends ObjectBehavior

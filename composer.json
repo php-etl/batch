@@ -1,38 +1,44 @@
 {
-    "name": "akeneo/batch",
+    "name": "php-etl/batch",
     "type": "library",
-    "description": "Akeneo Batch",
+    "description": "Fork of the akeneo/batch component, removing unnecessary dependencies",
     "keywords": ["Akeneo", "Batch", "Job", "Reader", "Writer", "Processor"],
-    "homepage": "https://github.com/akeneo/batch",
+    "homepage": "https://github.com/php-etl/batch",
     "license": "OSL-3.0",
     "authors": [
         {
             "name": "Akeneo",
             "homepage": "http://www.akeneo.com"
+        },
+        {
+            "name": "Kiboko SAS",
+            "homepage": "http://kiboko.fr"
+        },
+        {
+            "name": "Grégory Planchat",
+            "email": "gregory@kiboko.fr"
         }
     ],
     "require": {
-        "php": ">=5.4.4",
-        "symfony/event-dispatcher": "^2.3",
-        "symfony/property-access": "^2.3",
-	"symfony/validator": "^2.3",
-	"symfony/serializer": "^2.3",
-        "doctrine/common": "^2.1",
-        "akeneo/storage-utils": "0.6.x-dev"
+        "php": "^7.2",
+        "symfony/event-dispatcher": "^3.4 || ^4.4 || ^5.0",
+        "symfony/property-access": "^3.4 || ^4.4 || ^5.0",
+        "symfony/validator": "^3.4 || ^4.4 || ^5.0",
+        "symfony/serializer": "^3.4 || ^4.4 || ^5.0"
     },
     "require-dev": {
-        "phpspec/phpspec": "3.0.0"
+        "phpspec/phpspec": "^6.0"
     },
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-4": { "Akeneo\\Component\\Batch\\": "" }
+        "psr-4": { "Kiboko\\Component\\ETL\\Batch\\": "src/" }
     },
     "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
-            "dev-master": "0.6.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     }
 }

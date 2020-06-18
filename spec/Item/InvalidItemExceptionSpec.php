@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Item;
+namespace spec\Kiboko\Component\ETL\Batch\Item;
 
-use Akeneo\Component\Batch\Item\InvalidItemInterface;
+use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
 use PhpSpec\ObjectBehavior;
 
 class InvalidItemExceptionSpec extends ObjectBehavior

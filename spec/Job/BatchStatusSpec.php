@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\BatchStatus;
+use Kiboko\Component\ETL\Batch\Job\BatchStatus;
 use PhpSpec\ObjectBehavior;
 
 class BatchStatusSpec extends ObjectBehavior

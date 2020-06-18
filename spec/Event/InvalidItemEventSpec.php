@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Event;
+namespace spec\Kiboko\Component\ETL\Batch\Event;
 
-use Akeneo\Component\Batch\Item\InvalidItemInterface;
+use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
 use PhpSpec\ObjectBehavior;
 
 class InvalidItemEventSpec extends ObjectBehavior

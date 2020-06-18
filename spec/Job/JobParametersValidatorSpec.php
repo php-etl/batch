@@ -1,11 +1,11 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\JobInterface;
-use Akeneo\Component\Batch\Job\JobParameters;
-use Akeneo\Component\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
-use Akeneo\Component\Batch\Job\JobParameters\ConstraintCollectionProviderRegistry;
+use Kiboko\Component\ETL\Batch\Job\JobInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderRegistry;
 use PhpSpec\ObjectBehavior;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 

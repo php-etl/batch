@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job\JobParameters;
+namespace spec\Kiboko\Component\ETL\Batch\Job\JobParameters;
 
-use Akeneo\Component\Batch\Job\JobInterface;
-use Akeneo\Component\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
-use Akeneo\Component\Batch\Job\JobParameters\NonExistingServiceException;
+use Kiboko\Component\ETL\Batch\Job\JobInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\NonExistingServiceException;
 use PhpSpec\ObjectBehavior;
 
 class ConstraintCollectionProviderRegistrySpec extends ObjectBehavior

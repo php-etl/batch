@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Model;
+namespace spec\Kiboko\Component\ETL\Batch\Model;
 
-use Akeneo\Component\Batch\Model\StepExecution;
+use Kiboko\Component\ETL\Batch\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 
 class WarningSpec extends ObjectBehavior

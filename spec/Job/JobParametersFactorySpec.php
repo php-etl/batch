@@ -1,16 +1,16 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Job;
+namespace spec\Kiboko\Component\ETL\Batch\Job;
 
-use Akeneo\Component\Batch\Job\JobInterface;
-use Akeneo\Component\Batch\Job\JobParameters;
-use Akeneo\Component\Batch\Job\JobParameters\DefaultValuesProviderInterface;
-use Akeneo\Component\Batch\Job\JobParameters\DefaultValuesProviderRegistry;
+use Kiboko\Component\ETL\Batch\Job\JobInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderInterface;
+use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderRegistry;
 use PhpSpec\ObjectBehavior;
 
 class JobParametersFactorySpec extends ObjectBehavior
 {
-    const INSTANCE_CLASS = 'Akeneo\Component\Batch\Job\JobParameters';
+    const INSTANCE_CLASS = JobParameters::class;
 
     function let(DefaultValuesProviderRegistry $registry)
     {
@@ -28,7 +28,7 @@ class JobParametersFactorySpec extends ObjectBehavior
 
         $jobParameters = $this->create($job, ['my_defined_field' => 'my defined value']);
 
-        $jobParameters->shouldReturnAnInstanceOf('Akeneo\Component\Batch\Job\JobParameters');
+        $jobParameters->shouldReturnAnInstanceOf(JobParameters::class);
         $jobParameters->all()->shouldBe(
             [
                 'my_default_field' => 'my default value',

@@ -1,17 +1,20 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Step;
+namespace spec\Kiboko\Component\ETL\Batch\Step;
 
-use Akeneo\Component\Batch\Event\EventInterface;
-use Akeneo\Component\Batch\Item\FileInvalidItem;
-use Akeneo\Component\Batch\Item\InvalidItemException;
-use Akeneo\Component\Batch\Item\ItemProcessorInterface;
-use Akeneo\Component\Batch\Item\ItemReaderInterface;
-use Akeneo\Component\Batch\Item\ItemWriterInterface;
-use Akeneo\Component\Batch\Job\BatchStatus;
-use Akeneo\Component\Batch\Job\ExitStatus;
-use Akeneo\Component\Batch\Job\JobRepositoryInterface;
-use Akeneo\Component\Batch\Model\StepExecution;
+use Kiboko\Component\ETL\Batch\Event\AfterStepExecutionEvent;
+use Kiboko\Component\ETL\Batch\Event\BeforeStepExecutionEvent;
+use Kiboko\Component\ETL\Batch\Event\EventInterface;
+use Kiboko\Component\ETL\Batch\Event\StepExecutionSuccessEvent;
+use Kiboko\Component\ETL\Batch\Item\FileInvalidItem;
+use Kiboko\Component\ETL\Batch\Item\InvalidItemException;
+use Kiboko\Component\ETL\Batch\Item\ItemProcessorInterface;
+use Kiboko\Component\ETL\Batch\Item\ItemReaderInterface;
+use Kiboko\Component\ETL\Batch\Item\ItemWriterInterface;
+use Kiboko\Component\ETL\Batch\Job\BatchStatus;
+use Kiboko\Component\ETL\Batch\Job\ExitStatus;
+use Kiboko\Component\ETL\Batch\Job\JobRepositoryInterface;
+use Kiboko\Component\ETL\Batch\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -41,7 +44,7 @@ class ItemStepSpec extends ObjectBehavior
         $execution->getStatus()->willReturn($status);
         $status->getValue()->willReturn(BatchStatus::STARTING);
 
-        $dispatcher->dispatch(EventInterface::BEFORE_STEP_EXECUTION, Argument::any())->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(BeforeStepExecutionEvent::class))->shouldBeCalled();
         $execution->setStartTime(Argument::any())->shouldBeCalled();
         $execution->setStatus(Argument::any())->shouldBeCalled();
 
@@ -63,8 +66,8 @@ class ItemStepSpec extends ObjectBehavior
         $execution->isTerminateOnly()->willReturn(false);
 
         $execution->upgradeStatus(Argument::any())->shouldBeCalled();
-        $dispatcher->dispatch(EventInterface::STEP_EXECUTION_SUCCEEDED, Argument::any())->shouldBeCalled();
-        $dispatcher->dispatch(EventInterface::STEP_EXECUTION_COMPLETED, Argument::any())->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(StepExecutionSuccessEvent::class))->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(AfterStepExecutionEvent::class))->shouldBeCalled();
         $execution->setEndTime(Argument::any())->shouldBeCalled();
         $execution->setExitStatus(Argument::any())->shouldBeCalled();
 
@@ -84,7 +87,7 @@ class ItemStepSpec extends ObjectBehavior
         $execution->getStatus()->willReturn($status);
         $status->getValue()->willReturn(BatchStatus::STARTING);
 
-        $dispatcher->dispatch(EventInterface::BEFORE_STEP_EXECUTION, Argument::any())->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(BeforeStepExecutionEvent::class))->shouldBeCalled();
         $execution->setStartTime(Argument::any())->shouldBeCalled();
         $execution->setStatus(Argument::any())->shouldBeCalled();
 
@@ -111,8 +114,8 @@ class ItemStepSpec extends ObjectBehavior
         $execution->isTerminateOnly()->willReturn(false);
 
         $execution->upgradeStatus(Argument::any())->shouldBeCalled();
-        $dispatcher->dispatch(EventInterface::STEP_EXECUTION_SUCCEEDED, Argument::any())->shouldBeCalled();
-        $dispatcher->dispatch(EventInterface::STEP_EXECUTION_COMPLETED, Argument::any())->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(StepExecutionSuccessEvent::class))->shouldBeCalled();
+        $dispatcher->dispatch(Argument::type(AfterStepExecutionEvent::class))->shouldBeCalled();
         $execution->setEndTime(Argument::any())->shouldBeCalled();
         $execution->setExitStatus(Argument::any())->shouldBeCalled();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Item;
+namespace spec\Kiboko\Component\ETL\Batch\Item;
 
 use PhpSpec\ObjectBehavior;
 

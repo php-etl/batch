@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Akeneo\Component\Batch\Model;
+namespace spec\Kiboko\Component\ETL\Batch\Model;
 
-use Akeneo\Component\Batch\Job\Job;
-use Akeneo\Component\Batch\Model\JobExecution;
+use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
+use Kiboko\Component\ETL\Batch\Model\JobInstanceInterface;
 use PhpSpec\ObjectBehavior;
 
 class JobInstanceSpec extends ObjectBehavior
@@ -16,11 +16,15 @@ class JobInstanceSpec extends ObjectBehavior
         $this->getJobName()->shouldReturn('job_name');
     }
 
-    function it_is_cloneable(JobExecution $jobExecution)
+    function it_is_cloneable(JobExecutionInterface $jobExecution)
     {
+        $jobExecution
+            ->addStepExecution($this->getWrappedObject())
+            ->willReturn($jobExecution);
+
         $this->addJobExecution($jobExecution);
         $clone = clone $this;
-        $clone->shouldBeAnInstanceOf('Akeneo\Component\Batch\Model\JobInstance');
+        $clone->shouldBeAnInstanceOf(JobInstanceInterface::class);
         $clone->getJobExecutions()->shouldHaveCount(1);
         $clone->getId()->shouldReturn(null);
     }
