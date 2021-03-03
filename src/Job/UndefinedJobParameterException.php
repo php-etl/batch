@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
 /**
  * Throw an exception if job parameters are not defined

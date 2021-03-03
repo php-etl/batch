@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * Exception throw during step execution when an item is invalid

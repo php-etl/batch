@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Kiboko\Component\ETL\Batch\Event;
+namespace Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use Symfony\Contracts\EventDispatcher\Event;
 
 final class StepExecutionSuccessEvent extends Event implements EventInterface

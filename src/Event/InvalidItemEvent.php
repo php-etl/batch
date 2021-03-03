@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Event;
+namespace Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
+use Kiboko\Component\Workflow\Item\InvalidItemInterface;
 use Symfony\Contracts\EventDispatcher\Event;
 
 /**

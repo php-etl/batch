@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
 /**
  * Value object representing the status of a an Execution.

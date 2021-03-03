@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * This class handle invalid items that could be raised by Reader or Processor. This invalid item class will handle

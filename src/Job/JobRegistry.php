@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
 /**
  * A runtime service registry for registering job by name.

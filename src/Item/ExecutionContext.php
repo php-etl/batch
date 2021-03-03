@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * Object representing a context for an {@link ItemStream}.

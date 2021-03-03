@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * Interface for item transformation.  Given an item as input, this interface provides

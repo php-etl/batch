@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job\JobParameters;
+namespace spec\Kiboko\Component\Workflow\Job\JobParameters;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\NonExistingServiceException;
+use Kiboko\Component\Workflow\Job\JobInterface;
+use Kiboko\Component\Workflow\Job\JobParameters\DefaultValuesProviderInterface;
+use Kiboko\Component\Workflow\Job\JobParameters\NonExistingServiceException;
 use PhpSpec\ObjectBehavior;
 
 class DefaultValuesProviderRegistrySpec extends ObjectBehavior

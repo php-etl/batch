@@ -1,8 +1,8 @@
 {
-    "name": "php-etl/batch",
+    "name": "php-etl/workflow",
     "type": "library",
-    "description": "Fork of the akeneo/batch component, removing unnecessary dependencies",
-    "keywords": ["Akeneo", "Batch", "Job", "Reader", "Writer", "Processor"],
+    "description": "Pipelines workflow, fork of the akeneo/batch component",
+    "keywords": ["Pipeline", "Workflow","Akeneo", "Batch", "Job", "Reader", "Writer", "Processor"],
     "homepage": "https://github.com/php-etl/batch",
     "license": "OSL-3.0",
     "authors": [
@@ -20,25 +20,25 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "symfony/event-dispatcher": "^3.4 || ^4.4 || ^5.0",
-        "symfony/property-access": "^3.4 || ^4.4 || ^5.0",
-        "symfony/validator": "^3.4 || ^4.4 || ^5.0",
-        "symfony/serializer": "^3.4 || ^4.4 || ^5.0"
+        "php": "^8.0",
+        "symfony/event-dispatcher": "^5.2",
+        "symfony/property-access": "^5.2",
+        "symfony/validator": "^5.2",
+        "symfony/serializer": "^5.2"
     },
     "require-dev": {
-        "phpspec/phpspec": "^6.0"
+        "phpspec/phpspec": "^7.0"
     },
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-4": { "Kiboko\\Component\\ETL\\Batch\\": "src/" }
+        "psr-4": { "Kiboko\\Component\\Workflow\\": "src/" }
     },
     "minimum-stability": "stable",
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "0.1.x-dev"
         }
     }
 }

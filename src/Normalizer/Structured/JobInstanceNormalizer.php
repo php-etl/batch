@@ -1,9 +1,9 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Normalizer\Structured;
+namespace Kiboko\Component\Workflow\Normalizer\Structured;
 
-use Kiboko\Component\ETL\Batch\Model\JobInstance;
-use Kiboko\Component\ETL\Batch\Model\JobInstanceInterface;
+use Kiboko\Component\Workflow\Model\JobInstance;
+use Kiboko\Component\Workflow\Model\JobInstanceInterface;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 /**

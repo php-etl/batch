@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Event;
+namespace spec\Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
 use PhpSpec\ObjectBehavior;
 
 class JobExecutionFatalErrorEventSpec extends ObjectBehavior

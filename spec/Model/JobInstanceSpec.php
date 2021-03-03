@@ -1,9 +1,9 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Model;
+namespace spec\Kiboko\Component\Workflow\Model;
 
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
-use Kiboko\Component\ETL\Batch\Model\JobInstanceInterface;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\JobInstanceInterface;
 use PhpSpec\ObjectBehavior;
 
 class JobInstanceSpec extends ObjectBehavior

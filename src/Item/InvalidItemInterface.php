@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * Classes that implement this interface have to handle invalid items raised in the Processor, Reader and Writer.

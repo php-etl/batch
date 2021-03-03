@@ -1,10 +1,10 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Normalizer\Structured;
+namespace spec\Kiboko\Component\Workflow\Normalizer\Structured;
 
-use Kiboko\Component\ETL\Batch\Model\JobInstance;
-use Kiboko\Component\ETL\Batch\Model\JobInstanceInterface;
-use Kiboko\Component\ETL\Batch\Normalizer\Structured\JobInstanceNormalizer;
+use Kiboko\Component\Workflow\Model\JobInstance;
+use Kiboko\Component\Workflow\Model\JobInstanceInterface;
+use Kiboko\Component\Workflow\Normalizer\Structured\JobInstanceNormalizer;
 use PhpSpec\ObjectBehavior;
 
 class JobInstanceNormalizerSpec extends ObjectBehavior

@@ -1,16 +1,16 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Step;
+namespace Kiboko\Component\Workflow\Step;
 
-use Kiboko\Component\ETL\Batch\Event\InvalidItemEvent;
-use Kiboko\Component\ETL\Batch\Item\FlushableInterface;
-use Kiboko\Component\ETL\Batch\Item\InitializableInterface;
-use Kiboko\Component\ETL\Batch\Item\InvalidItemException;
-use Kiboko\Component\ETL\Batch\Item\ItemProcessorInterface;
-use Kiboko\Component\ETL\Batch\Item\ItemReaderInterface;
-use Kiboko\Component\ETL\Batch\Item\ItemWriterInterface;
-use Kiboko\Component\ETL\Batch\Job\JobRepositoryInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Event\InvalidItemEvent;
+use Kiboko\Component\Workflow\Item\FlushableInterface;
+use Kiboko\Component\Workflow\Item\InitializableInterface;
+use Kiboko\Component\Workflow\Item\InvalidItemException;
+use Kiboko\Component\Workflow\Item\ItemProcessorInterface;
+use Kiboko\Component\Workflow\Item\ItemReaderInterface;
+use Kiboko\Component\Workflow\Item\ItemWriterInterface;
+use Kiboko\Component\Workflow\Job\JobRepositoryInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 
 /**

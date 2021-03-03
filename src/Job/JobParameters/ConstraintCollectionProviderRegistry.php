@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job\JobParameters;
+namespace Kiboko\Component\Workflow\Job\JobParameters;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterface;
+use Kiboko\Component\Workflow\Job\JobInterface;
 
 /**
  * Registry of constraints that can be used to validate a JobParameters

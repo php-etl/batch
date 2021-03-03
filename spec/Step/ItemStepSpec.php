@@ -1,20 +1,20 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Step;
+namespace spec\Kiboko\Component\Workflow\Step;
 
-use Kiboko\Component\ETL\Batch\Event\AfterStepExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\BeforeStepExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\EventInterface;
-use Kiboko\Component\ETL\Batch\Event\StepExecutionSuccessEvent;
-use Kiboko\Component\ETL\Batch\Item\FileInvalidItem;
-use Kiboko\Component\ETL\Batch\Item\InvalidItemException;
-use Kiboko\Component\ETL\Batch\Item\ItemProcessorInterface;
-use Kiboko\Component\ETL\Batch\Item\ItemReaderInterface;
-use Kiboko\Component\ETL\Batch\Item\ItemWriterInterface;
-use Kiboko\Component\ETL\Batch\Job\BatchStatus;
-use Kiboko\Component\ETL\Batch\Job\ExitStatus;
-use Kiboko\Component\ETL\Batch\Job\JobRepositoryInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Event\AfterStepExecutionEvent;
+use Kiboko\Component\Workflow\Event\BeforeStepExecutionEvent;
+use Kiboko\Component\Workflow\Event\EventInterface;
+use Kiboko\Component\Workflow\Event\StepExecutionSuccessEvent;
+use Kiboko\Component\Workflow\Item\FileInvalidItem;
+use Kiboko\Component\Workflow\Item\InvalidItemException;
+use Kiboko\Component\Workflow\Item\ItemProcessorInterface;
+use Kiboko\Component\Workflow\Item\ItemReaderInterface;
+use Kiboko\Component\Workflow\Item\ItemWriterInterface;
+use Kiboko\Component\Workflow\Job\BatchStatus;
+use Kiboko\Component\Workflow\Job\ExitStatus;
+use Kiboko\Component\Workflow\Job\JobRepositoryInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;

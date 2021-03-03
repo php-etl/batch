@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Model;
+namespace spec\Kiboko\Component\Workflow\Model;
 
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 
 class WarningSpec extends ObjectBehavior

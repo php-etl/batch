@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderRegistry;
+use Kiboko\Component\Workflow\Job\JobParameters\ConstraintCollectionProviderRegistry;
 use Symfony\Component\Validator\ConstraintViolationListInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 

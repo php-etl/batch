@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Item;
+namespace spec\Kiboko\Component\Workflow\Item;
 
 use PhpSpec\ObjectBehavior;
 

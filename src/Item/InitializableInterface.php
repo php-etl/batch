@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Item;
+namespace Kiboko\Component\Workflow\Item;
 
 /**
  * A StepElement, for instance, reader, processor, writer can be defined as singleton, for instance, when declared as

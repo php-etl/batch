@@ -1,13 +1,13 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Model;
+namespace Kiboko\Component\Workflow\Model;
 
-use Kiboko\Component\ETL\Batch\Item\ExecutionContext;
-use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
-use Kiboko\Component\ETL\Batch\Job\BatchStatus;
-use Kiboko\Component\ETL\Batch\Job\ExitStatus;
-use Kiboko\Component\ETL\Batch\Job\JobParameters;
-use Kiboko\Component\ETL\Batch\Job\RuntimeErrorException;
+use Kiboko\Component\Workflow\Item\ExecutionContext;
+use Kiboko\Component\Workflow\Item\InvalidItemInterface;
+use Kiboko\Component\Workflow\Job\BatchStatus;
+use Kiboko\Component\Workflow\Job\ExitStatus;
+use Kiboko\Component\Workflow\Job\JobParameters;
+use Kiboko\Component\Workflow\Job\RuntimeErrorException;
 
 /**
  * Batch domain object representation the execution of a step. Unlike JobExecutionInterface, there are additional properties

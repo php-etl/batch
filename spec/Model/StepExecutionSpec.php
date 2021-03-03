@@ -1,13 +1,13 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Model;
+namespace spec\Kiboko\Component\Workflow\Model;
 
-use Kiboko\Component\ETL\Batch\Item\ExecutionContext;
-use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
-use Kiboko\Component\ETL\Batch\Job\BatchStatus;
-use Kiboko\Component\ETL\Batch\Job\ExitStatus;
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Item\ExecutionContext;
+use Kiboko\Component\Workflow\Item\InvalidItemInterface;
+use Kiboko\Component\Workflow\Job\BatchStatus;
+use Kiboko\Component\Workflow\Job\ExitStatus;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 

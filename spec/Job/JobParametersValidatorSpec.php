@@ -1,11 +1,11 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderRegistry;
+use Kiboko\Component\Workflow\Job\JobInterface;
+use Kiboko\Component\Workflow\Job\JobParameters;
+use Kiboko\Component\Workflow\Job\JobParameters\ConstraintCollectionProviderInterface;
+use Kiboko\Component\Workflow\Job\JobParameters\ConstraintCollectionProviderRegistry;
 use PhpSpec\ObjectBehavior;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 

@@ -1,16 +1,16 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Event\AfterJobExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\BeforeJobExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\BeforeJobStatusUpgradeEvent;
-use Kiboko\Component\ETL\Batch\Event\JobExecutionFatalErrorEvent;
-use Kiboko\Component\ETL\Batch\Event\JobExecutionInterruptedEvent;
-use Kiboko\Component\ETL\Batch\Event\JobExecutionStoppedEvent;
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
-use Kiboko\Component\ETL\Batch\Step\StepInterface;
+use Kiboko\Component\Workflow\Event\AfterJobExecutionEvent;
+use Kiboko\Component\Workflow\Event\BeforeJobExecutionEvent;
+use Kiboko\Component\Workflow\Event\BeforeJobStatusUpgradeEvent;
+use Kiboko\Component\Workflow\Event\JobExecutionFatalErrorEvent;
+use Kiboko\Component\Workflow\Event\JobExecutionInterruptedEvent;
+use Kiboko\Component\Workflow\Event\JobExecutionStoppedEvent;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
+use Kiboko\Component\Workflow\Step\StepInterface;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\Filesystem\Filesystem;
@@ -145,7 +145,7 @@ class Job implements JobInterface
      *
      * A unique working directory is created before the execution of the job. It is deleted when the job is terminated.
      * The working directory is created in the temporary filesystem. Its pathname is placed in the JobExecutionContext
-     * via the key {@link \Kiboko\Component\ETL\Batch\Job\JobInterface::WORKING_DIRECTORY_PARAMETER}
+     * via the key {@link \Kiboko\Component\Workflow\Job\JobInterface::WORKING_DIRECTORY_PARAMETER}
      */
     final public function execute(JobExecutionInterface $jobExecution)
     {

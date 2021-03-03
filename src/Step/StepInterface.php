@@ -1,9 +1,9 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Step;
+namespace Kiboko\Component\Workflow\Step;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterruptedException;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Job\JobInterruptedException;
+use Kiboko\Component\Workflow\Model\StepExecution;
 
 /**
  * Batch domain interface representing the configuration of a step. As with the

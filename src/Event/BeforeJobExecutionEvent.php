@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Kiboko\Component\ETL\Batch\Event;
+namespace Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
 use Symfony\Contracts\EventDispatcher\Event;
 
 final class BeforeJobExecutionEvent extends Event implements EventInterface

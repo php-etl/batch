@@ -1,21 +1,21 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Step;
+namespace Kiboko\Component\Workflow\Step;
 
-use Kiboko\Component\ETL\Batch\Event\AfterStepExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\BeforeStepExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\EventInterface;
-use Kiboko\Component\ETL\Batch\Event\InvalidItemEvent;
-use Kiboko\Component\ETL\Batch\Event\StepExecutionErroredEvent;
-use Kiboko\Component\ETL\Batch\Event\StepExecutionEvent;
-use Kiboko\Component\ETL\Batch\Event\StepExecutionInterruptedEvent;
-use Kiboko\Component\ETL\Batch\Event\StepExecutionSuccessEvent;
-use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
-use Kiboko\Component\ETL\Batch\Job\BatchStatus;
-use Kiboko\Component\ETL\Batch\Job\ExitStatus;
-use Kiboko\Component\ETL\Batch\Job\JobInterruptedException;
-use Kiboko\Component\ETL\Batch\Job\JobRepositoryInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Event\AfterStepExecutionEvent;
+use Kiboko\Component\Workflow\Event\BeforeStepExecutionEvent;
+use Kiboko\Component\Workflow\Event\EventInterface;
+use Kiboko\Component\Workflow\Event\InvalidItemEvent;
+use Kiboko\Component\Workflow\Event\StepExecutionErroredEvent;
+use Kiboko\Component\Workflow\Event\StepExecutionEvent;
+use Kiboko\Component\Workflow\Event\StepExecutionInterruptedEvent;
+use Kiboko\Component\Workflow\Event\StepExecutionSuccessEvent;
+use Kiboko\Component\Workflow\Item\InvalidItemInterface;
+use Kiboko\Component\Workflow\Job\BatchStatus;
+use Kiboko\Component\Workflow\Job\ExitStatus;
+use Kiboko\Component\Workflow\Job\JobInterruptedException;
+use Kiboko\Component\Workflow\Job\JobRepositoryInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use Symfony\Contracts\EventDispatcher\Event;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 

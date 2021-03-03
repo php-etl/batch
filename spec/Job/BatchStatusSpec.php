@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\BatchStatus;
+use Kiboko\Component\Workflow\Job\BatchStatus;
 use PhpSpec\ObjectBehavior;
 
 class BatchStatusSpec extends ObjectBehavior

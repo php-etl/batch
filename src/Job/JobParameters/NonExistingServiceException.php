@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job\JobParameters;
+namespace Kiboko\Component\Workflow\Job\JobParameters;
 
 /**
  * This exception should be thrown by service registry when given service does not exists

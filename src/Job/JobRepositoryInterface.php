@@ -1,10 +1,10 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
-use Kiboko\Component\ETL\Batch\Model\JobInstanceInterface;
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\JobInstanceInterface;
+use Kiboko\Component\Workflow\Model\StepExecution;
 
 /**
  * Common interface for Job repositories which should handle how job are stored, updated

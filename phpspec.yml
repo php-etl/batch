@@ -1,5 +1,5 @@
 suites:
     default:
-        namespace: Kiboko\Component\ETL\Batch
-        psr4_prefix: Kiboko\Component\ETL\Batch
+        namespace: Kiboko\Component\Workflow
+        psr4_prefix: Kiboko\Component\Workflow
         src_path: .

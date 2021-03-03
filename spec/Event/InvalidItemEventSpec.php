@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Event;
+namespace spec\Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Item\InvalidItemInterface;
+use Kiboko\Component\Workflow\Item\InvalidItemInterface;
 use PhpSpec\ObjectBehavior;
 
 class InvalidItemEventSpec extends ObjectBehavior

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Event;
+namespace Kiboko\Component\Workflow\Event;
 
 /**
  * Interface of the batch component events

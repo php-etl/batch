@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Step;
+namespace Kiboko\Component\Workflow\Step;
 
 /**
  * Defines a step element, an element which can be injected in a step

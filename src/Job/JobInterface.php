@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Model\JobExecutionInterface;
+use Kiboko\Component\Workflow\Model\JobExecutionInterface;
 
 /**
  * Batch domain object representing a job. Job is an explicit abstraction

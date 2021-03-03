@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job;
+namespace Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderRegistry;
+use Kiboko\Component\Workflow\Job\JobParameters\DefaultValuesProviderRegistry;
 
 /**
  * Allow to create immutable JobParameters with passed parameters completed by default values

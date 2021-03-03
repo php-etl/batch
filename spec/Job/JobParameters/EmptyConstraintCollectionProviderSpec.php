@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job\JobParameters;
+namespace spec\Kiboko\Component\Workflow\Job\JobParameters;
 
-use Kiboko\Component\ETL\Batch\Job\JobParameters\ConstraintCollectionProviderInterface;
+use Kiboko\Component\Workflow\Job\JobParameters\ConstraintCollectionProviderInterface;
 use PhpSpec\ObjectBehavior;
 
 class EmptyConstraintCollectionProviderSpec extends ObjectBehavior

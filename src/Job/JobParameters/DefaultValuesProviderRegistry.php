@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Job\JobParameters;
+namespace Kiboko\Component\Workflow\Job\JobParameters;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterface;
+use Kiboko\Component\Workflow\Job\JobInterface;
 
 /**
  * Provides default values provider to build a JobParameters depending on the Job

@@ -1,11 +1,11 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\JobInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderInterface;
-use Kiboko\Component\ETL\Batch\Job\JobParameters\DefaultValuesProviderRegistry;
+use Kiboko\Component\Workflow\Job\JobInterface;
+use Kiboko\Component\Workflow\Job\JobParameters;
+use Kiboko\Component\Workflow\Job\JobParameters\DefaultValuesProviderInterface;
+use Kiboko\Component\Workflow\Job\JobParameters\DefaultValuesProviderRegistry;
 use PhpSpec\ObjectBehavior;
 
 class JobParametersFactorySpec extends ObjectBehavior

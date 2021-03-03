@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
 use PhpSpec\ObjectBehavior;
 

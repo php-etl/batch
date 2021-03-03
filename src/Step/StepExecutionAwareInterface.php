@@ -1,8 +1,8 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Step;
+namespace Kiboko\Component\Workflow\Step;
 
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Model\StepExecution;
 
 /**
  * Interface is used to receive StepExecution instance inside reader, processor or writer

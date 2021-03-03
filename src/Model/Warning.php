@@ -1,6 +1,6 @@
 <?php
 
-namespace Kiboko\Component\ETL\Batch\Model;
+namespace Kiboko\Component\Workflow\Model;
 
 /**
  * Represents a Warning raised during step execution

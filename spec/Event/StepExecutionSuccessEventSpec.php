@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Event;
+namespace spec\Kiboko\Component\Workflow\Event;
 
-use Kiboko\Component\ETL\Batch\Model\StepExecution;
+use Kiboko\Component\Workflow\Model\StepExecution;
 use PhpSpec\ObjectBehavior;
 
 class StepExecutionSuccessEventSpec extends ObjectBehavior

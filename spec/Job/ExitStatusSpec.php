@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\ExitStatus;
+use Kiboko\Component\Workflow\Job\ExitStatus;
 use PhpSpec\ObjectBehavior;
 
 class ExitStatusSpec extends ObjectBehavior

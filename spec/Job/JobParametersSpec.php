@@ -1,8 +1,8 @@
 <?php
 
-namespace spec\Kiboko\Component\ETL\Batch\Job;
+namespace spec\Kiboko\Component\Workflow\Job;
 
-use Kiboko\Component\ETL\Batch\Job\UndefinedJobParameterException;
+use Kiboko\Component\Workflow\Job\UndefinedJobParameterException;
 use PhpSpec\ObjectBehavior;
 
 class JobParametersSpec extends ObjectBehavior
