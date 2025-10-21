@@ -20,7 +20,7 @@ services:
     user: docker:docker
     volumes:
       - ./.docker/php@7.2/cli-xdebug/config/security.ini:/usr/local/etc/php/conf.d/security.ini:ro
-      - ./:/var/www/html
+      - ./:/app
       - $HOME/.composer/:/opt/docker/.composer/
     restart: "no"
     command: [ "sleep", "31536000" ]
@@ -34,7 +34,7 @@ services:
     user: docker:docker
     volumes:
       - ./.docker/php@7.2/cli-xdebug/config/security.ini:/usr/local/etc/php/conf.d/security.ini:ro
-      - ./:/var/www/html
+      - ./:/app
       - $HOME/.composer/:/opt/docker/.composer/
     restart: "no"
     command: [ "sleep", "31536000" ]
@@ -46,7 +46,7 @@ services:
     user: docker:docker
     volumes:
       - ./.docker/php@7.4/cli/config/security.ini:/usr/local/etc/php/conf.d/security.ini:ro
-      - ./:/var/www/html
+      - ./:/app
       - $HOME/.composer/:/opt/docker/.composer/
     restart: "no"
     command: [ "sleep", "31536000" ]
@@ -60,7 +60,7 @@ services:
     user: docker:docker
     volumes:
       - ./.docker/php@7.4/cli-xdebug/config/security.ini:/usr/local/etc/php/conf.d/security.ini:ro
-      - ./:/var/www/html
+      - ./:/app
       - $HOME/.composer/:/opt/docker/.composer/
     restart: "no"
     command: [ "sleep", "31536000" ]
