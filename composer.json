@@ -20,7 +20,7 @@
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^8.4",
         "symfony/event-dispatcher": "^5.2",
         "symfony/property-access": "^5.2",
         "symfony/validator": "^5.2",
